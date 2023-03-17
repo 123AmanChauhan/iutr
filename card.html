@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Card</title>
+    <style>
+        *{margin:0;
+          box-sizing: border-box;}
+        .container{max-width: 1200px;
+                   margin: auto;}
+        .box{border-radius: 10px;
+             width:350px;
+             height: 400px;
+             margin:auto;
+             margin-top:80px;
+             box-shadow: 0px 0px 8px 3px grey;
+             overflow: hidden;
+             transition: 0.5s;}
+        .box .icon>span{font-size: 45px;
+                        /* border-radius: 50px; */
+                        margin-left: 40%;
+                        margin-top: 20px;
+                        transition: 1s;}
+        .box:hover .icon>span{box-shadow: 0px 0px 0px 400px red;
+                              transform: rotateZ(360deg); 
+                              color:white;
+                              background-color: red;}
+        .box:hover{color:white} 
+        .box h2{text-align: center;
+                margin-top: 30px;
+                text-decoration: underline;
+                position: relative;
+                z-index: 1;}
+        .box p{text-align: justify;
+               padding: 20px;
+               position: relative;
+               z-index: 1;}
+        a{text-decoration: none;
+          font-size: 20px;
+          font-weight: 600;
+          box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+          color:black;
+          position: relative;
+          z-index: 1;
+          margin-left: 110px;
+          transition: 1s;
+          padding: 10px 10px;
+          position: absolute;
+          left:37%}
+        .box:hover>a{color:white;
+                     background-color: grey;
+                     border-radius: 50px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+       <div class="box">
+             <div class="icon"><span class="fab fa-facebook-square"></span></div>
+             <h2>HELLO! I AM FACEBOOK</h2>
+             <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam corrupti itaque voluptas nostrum eum iure, voluptates officiis aliquid nobis, consectetur aspernatur. Eum, officiis iure. Facere necessitatibus assumenda explicabo qui a. Officia ad exercitationem incidunt. Aut illum officia, vitae, nesciunt, laboriosam eligendi nihil consectetur porro maxime fugit necessitatibus. Fugit, est in?</P>
+             <a href="#">READ MORE</a>
+       </div>
+    </div>
+</body>
+</html>
